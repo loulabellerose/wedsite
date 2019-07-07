@@ -1,0 +1,10 @@
+<h1>RSVP here</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form method="POST" class="guest-form">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">SUBMIT</button>
+
+</form>
