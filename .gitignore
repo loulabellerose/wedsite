@@ -102,9 +102,16 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
 
+=======
+>>>>>>> f0bdad58e3e715dcfe226617d9732bafb0390f5e
 # Text backup files
 *.bak
 
 # Database
 *.sqlite3
+<<<<<<< HEAD
+=======
+
+>>>>>>> f0bdad58e3e715dcfe226617d9732bafb0390f5e
