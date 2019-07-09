@@ -3,10 +3,10 @@
 {% block content %}
   <h1>RSVP here</h1>
     <div class="form-label-group">
-    <form method="POST" class="guest-form">
+    <form action="mailto:louiserosehamerston@gmail.com" method="POST" class="contact-form">
       {% csrf_token %}
       {{ form.as_p }}
-      <button type="submit">SUBMIT</button>
+      <button type="submit">SEND</button>
     </form>
     </div>
 {% endblock %}

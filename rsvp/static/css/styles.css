@@ -1,0 +1,35 @@
+.content {
+    margin-left: 40px;
+
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.form-label-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: 150;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  letter-spacing: .1rem;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.form-label-group label {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
