@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'secret_key.py')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = 'False'
 
 ALLOWED_HOSTS = ['127.0.0.1','fierce-atoll-85493.herokuapp.com', 'www.impossiblynow.com']
 
