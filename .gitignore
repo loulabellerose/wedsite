@@ -104,7 +104,7 @@ venv.bak/
 .mypy_cache/
 
 # secretkey
-.gitignore
+.secret_key.py
 
 <<<<<<< HEAD
 
