@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 # DEBUG = True
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['127.0.0.1','fierce-atoll-85493.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','fierce-atoll-85493.herokuapp.com', 'www.impossiblynow.com']
 
 
 # Application definition
