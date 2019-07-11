@@ -103,8 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# secretkey
-.secret_key.py
 
 <<<<<<< HEAD
 
