@@ -21,13 +21,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = '9^sdh%3$3$r02(3i&h^kh+sinh)j(-l%r&&w-(a_g$w=)*(*1d'
-SECRET_KEY = os.environ.get('SECRET_KEY', 'secret_key.txt')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','fierce-atoll-85493.herokuapp.com', 'www.impossiblynow.com']
+ALLOWED_HOSTS = ['127.0.0.1','fierce-atoll-85493.herokuapp.com', 'www.impossiblynow.com', "impossiblynow.com"]
 
 
 # Application definition
