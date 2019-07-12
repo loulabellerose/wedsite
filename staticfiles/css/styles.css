@@ -9,7 +9,7 @@
   margin-right: auto;
 }
 
-h1, h5, p {
+h1, h3, h4, h5, p {
   color: #FFFFFF;
   text-align: center;
 }
@@ -30,8 +30,10 @@ button{
 
 .dropdown{
   width: 100%;
-  font-size: 150px;
+  font-size: 18px;
+  border-radius: 0;
 }
+
 /* unvisited link */
 a {
   color: #e524c0;
@@ -64,7 +66,7 @@ a:active {
   position: relative;
   width: 100%;
   margin-bottom: 1rem;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.5rem;
   border-radius: 1.5rem;
   letter-spacing: .1rem;

@@ -1,16 +1,15 @@
 {% extends 'rsvp/base.html' %}
 {% load static %}
 {% block content %}
+  <br>
+  <br>
   <h1>Gary & Louise are getting married!</h1>
     <div class="form-label-group">
-    <p>We'd love for you to join us in celebration</p>
-    <p>on 20th June 2020</p>
-    <p>at The Drury Buildings, Dublin</p>
     <br>
     <img src="{% static 'media/our_wedding_invitation.png' %}" alt="Coulters Opening Party">
     <br>
     <br>
-    <h5>Please let us know if you will be attending by completing the form below:</h5>
+    <h4>Please let us know if you will be attending by completing the form below:</h4>
     <form method="POST" class="guest-form">
       {% csrf_token %}
       {{ form.as_p }}

@@ -1,6 +1,7 @@
 .container {
   background-color: black;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .row {
@@ -9,7 +10,7 @@
   margin-right: auto;
 }
 
-h1, h5, p {
+h1, h3, h4, h5, p {
   color: #FFFFFF;
   text-align: center;
 }
@@ -30,16 +31,14 @@ button{
 
 .dropdown{
   width: 100%;
-  font-size: 150px;
+  font-size: 18px;
+  -webkit-border-radius: 0;
+  color: black;
 }
+
 /* unvisited link */
 a {
   color: #e524c0;
-}
-
-/* mouse over link */
-a:hover {
-  font-weight: 500;
 }
 
 /* selected link */
@@ -64,7 +63,7 @@ a:active {
   position: relative;
   width: 100%;
   margin-bottom: 1rem;
-  font-weight: 200;
+  /*font-weight: 300;*/
   font-size: 1.5rem;
   border-radius: 1.5rem;
   letter-spacing: .1rem;
