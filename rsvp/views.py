@@ -5,7 +5,17 @@ from .forms import GuestForm, ContactForm
 from django.core.mail import send_mail
 
 def index(request):
-    return render(request, 'rsvp/index.html')
+        if request.method == "POST":
+            form = GuestForm(request.POST)
+
+            if form.is_valid():
+                guest = form.save()
+                guest.save()
+                return redirect('thanks')
+        else:
+            form = GuestForm()
+        return render(request, 'rsvp/index.html', {'form': form})
+    # return render(request, 'rsvp/index.html')
 # Create your views here.
 
 def respond(request):
@@ -18,7 +28,7 @@ def respond(request):
             return redirect('thanks')
     else:
         form = GuestForm()
-    return render(request, 'rsvp/respond.html', {'form': form})
+    return render(request, 'rsvp/index.html', {'form': form})
 
 def thanks(request):
     return render(request, 'rsvp/thanks.html')
