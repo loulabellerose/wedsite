@@ -10,6 +10,9 @@ class GuestForm(forms.ModelForm):
         labels = {
             'rsvp': _('RSVP'),
         }
+        widgets = {
+            'rsvp': forms.Select(attrs={'class': 'dropdown'}),
+        }
 
 class ContactForm(forms.Form):
     name = forms.CharField(max_length=100)
