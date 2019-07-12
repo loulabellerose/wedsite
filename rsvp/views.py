@@ -15,8 +15,6 @@ def index(request):
         else:
             form = GuestForm()
         return render(request, 'rsvp/index.html', {'form': form})
-    # return render(request, 'rsvp/index.html')
-# Create your views here.
 
 def respond(request):
     if request.method == "POST":
