@@ -3,9 +3,9 @@
 {% block content %}
   <br>
   <br>
+  <br>
   <h1>Gary & Louise are getting married!</h1>
     <div class="form-label-group">
-    <br>
     <img src="{% static 'media/our_wedding_invitation.png' %}" alt="Coulters Opening Party">
     <br>
     <br>
@@ -13,7 +13,10 @@
     <form method="POST" class="guest-form">
       {% csrf_token %}
       {{ form.as_p }}
+      <br>
       <button type="submit">SUBMIT</button>
     </form>
+    <br>
+    <p>If you have any questions you can <a href="{% url 'contact-us' %}">contact us</a>
     </div>
 {% endblock %}

@@ -16,4 +16,5 @@ class GuestForm(forms.ModelForm):
 
 class ContactForm(forms.Form):
     name = forms.CharField(max_length=100)
-    message = forms.CharField(widget=forms.Textarea)
+    contact_email = forms.CharField(max_length=100)
+    message = forms.CharField(max_length=1000)
