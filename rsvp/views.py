@@ -27,6 +27,7 @@ def contact(request):
             name = form.cleaned_data['name']
             contact_email = form.cleaned_data['contact_email']
             message = form.cleaned_data['message']
+            message =  ''.join((name, ' ', contact_email, ' ', message))
             try:
                 send_mail(name, message, contact_email, ['louiserosehamerston@gmail.com'], fail_silently=False)
             except BadHeaderError:
