@@ -2,13 +2,37 @@
 {% load static %}
 {% block content %}
   <br>
-  <br>
-  <br>
-  <h1>Gary & Louise are getting married!</h1>
     <div class="form-label-group">
-    <img src="{% static 'media/our_wedding_invitation.png' %}" alt="Coulters Opening Party">
+    <img src="{% static 'media/coulters.png' %}" alt="Coulters Opening Party">
     <br>
+    <img src="{% static 'media/date.png' %}" alt="20th June 2020">
     <br>
+    <p>Hi everyone,</p>
+    <p>If you are here, then you’ve received your invite. Please use the form at the bottom of the page to RSVP.</p>
+    <p>Below is some useful information - please read it all and if you need to ask us anything else just click on the ‘contact us’ link at the bottom of the page.</p>
+      <p>Lots of love,</p>
+      <p>Gary & Louise</p>
+
+    <h1>INFORMATION</h1>
+    <h4>TRANSPORT</h4>
+    <!-- <p>If you are coming from Belfast you have a few options:</p> -->
+    <p>Bus</p>
+    <p>The bus takes roughly 2 hours each way and return tickets usually cost around £16. There are a few companies to choose from but we recommend: <a href="https://www.dublincoach.ie" target="_blank">Dublin Coach</a>
+      and <a href="https://www.aircoach.ie" target="_blank">Air Coach</a> - we usually pick Dublin Coach as the buses are a little nicer and have a toilet on board, but the Air Coach buses run through the night if you aren't planning to stay over.</p>
+    <p>Train</p>
+    <p>Translink Enterprise run direct trains to Dublin from Central Station but it can be considerably more expensive than the bus and isn't any quicker.
+      However, the <a href="https://www.translink.co.uk/home" target="_blank">Translink website</a> runs web fare offers that start from £8.50 each way if booked 30 days in advance.</p>
+    <br>
+    <h4>HOTELS *IMPORTANT*</h4>
+   <p>Dublin is a host city for the 2020 UEFA European Championships and there happens to be a match in Dublin the night before our wedding.
+   Hotels will get booked up quickly and prices are likely to increase so we HIGHLY RECOMMEND trying to sort out your accommodation as soon as possible.
+   <a href="https://www.booking.com" target="_blank">Booking.com</a> offers the option to book now and pay on arrival which can be very useful.
+   We plan to stay close to the venue but anywhere within a mile or so radius of Dublin City Centre would be ideal.<p>
+    <br>
+  <h4>FOOD</h4>
+  <p>Food orders will be taken on the day and there will be a selection of chicken/pork, beef, fish and vegetarian. However if you have any special dietary
+    requirements ie vegan, gluten intolerant, or any allergies, please drop us an email using the link above so that we can let the venue know in advance and ensure you are catered for.</p>
+
     <h4>Please let us know if you will be attending by completing the form below:</h4>
     <form method="POST" class="guest-form">
       {% csrf_token %}
@@ -18,5 +42,10 @@
     </form>
     <br>
     <p>If you have any questions you can <a href="{% url 'contact-us' %}">contact us</a>
+    <br>
+
+
+
+
     </div>
 {% endblock %}

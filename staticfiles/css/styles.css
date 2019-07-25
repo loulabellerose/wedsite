@@ -11,9 +11,14 @@
 }
 
 h1, h3, h4, h5, p {
+  font-family: Arial, Helvetica, sans-serif;
   color: #FFFFFF;
   text-align: center;
   line-height: 1.6;
+}
+
+a:link {
+  color: #ff69b4;
 }
 
 img{
