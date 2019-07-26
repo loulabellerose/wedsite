@@ -1,6 +1,7 @@
 from django import forms
 from .models import Guest
 from django.utils.translation import gettext_lazy as _
+# arbitrary text for sake of making a change
 
 class GuestForm(forms.ModelForm):
     class Meta:
